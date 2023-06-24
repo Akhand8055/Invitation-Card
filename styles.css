@@ -1,0 +1,368 @@
+
+/* #scroll {
+  width: 100%;
+  height: 100vh;
+} */
+
+body{
+  position: relative;
+}
+#preloader{
+  background: #890025 url("https://media.tenor.com/hlKEXPvlX48AAAAi/loading-loader.gif") no-repeat center center;
+  background-size: 6%;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  opacity: 1;
+
+  transition: visibility 0.5s, opacity 0.5s linear;
+  /* transition: opacity 5s linear; */
+}
+#preloader p{
+  font-size: 41px;
+  margin-top: 170px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: white;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.80857;
+}
+#navbar {
+  background-color: #F6F1F1;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgb(205, 195, 204);
+  z-index: 1;
+}
+nav ul {
+  list-style: none;
+  overflow: auto;
+  padding-right: 30px;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  float: right;
+  margin: 0;
+  padding: 19px 25px;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  background-color: #890025;
+  color: white;
+}
+
+.scrollspy{
+  background-color: #890025;
+  color: white;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  transform: translate(0,-70px);
+}
+.inView {
+  transform: translate(0,0);
+  transition: all 0.7s ease-out;
+}
+
+
+
+main img {
+  width: 1263.33px;
+}
+.test {
+  font-size: 3em;
+}
+
+#displayImage {
+
+  color: white;
+  width: 100%;
+  height: 630px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: changeImage 16s cubic-bezier(0,1,0,1) infinite;
+}
+@keyframes changeImage {
+  0%{
+    background-image: url("image1.jpg");
+  }
+  25%{
+    background-image: url("image2.jpg");
+  }
+  50%{
+    background-image: url("image3.jpg");
+  }
+  75%{
+    background-image: url("image4.jpg");
+  }
+  100%{
+    background-image: url("image1.jpg");
+  }
+}
+#displayImage h1 {
+  font-size: 54px;
+  font-family: 'Engagement', cursive;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  padding: 15px;
+}
+
+#displayBox h2 {
+  font-size: 48px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+#dateBox {
+  margin: auto;
+  background-image: url("https://invite.weddingpixel.in/321/images/ptn-bg.jpg");
+  width: 550px;
+  height: 350px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#displayDate{
+  font-family: 'Engagement', cursive;
+  background-color: #890025;
+}
+.dates {
+  width: 100px;
+  height: 84px;
+  border: 12px solid #5f897f;
+  background-color: #d69b7f;
+}
+
+#hour {
+  position: relative;
+  left: 450px;
+  top: -83.92px;
+}
+
+#minute {
+  position: relative;
+  left: 217px;
+  top: 3px;
+}
+
+#day p{
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: medium;
+  margin-top: 0px;
+  margin-top: 0px;
+  margin-left: 15px;
+}
+
+#day {
+  font-size: 38px;
+}
+
+#day h3 {
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 18px;
+}
+
+
+#hour p{
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: medium;
+  margin-top: 0px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+#hour {
+  font-size: 38px;
+}
+
+#hour h3 {
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 18px;
+}
+
+#minute p{
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  font-size: medium;
+  margin-top: 0px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+#minute {
+  font-size: 38px;
+}
+
+#minute h3 {
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 18px;
+}
+
+#profiles {
+  background-image: url("https://invite.weddingpixel.in/321/images/ptn-bg.jpg");
+}
+#profiles h2{
+  margin-top: 0;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: 'Engagement', cursive;
+}
+
+
+#groom{
+  height: fit-content;
+}
+#groom img{
+  width: 290px;
+  height: 367px;
+  border: 30px solid #890025;
+  margin-left: 70px;
+}
+
+#content h1{
+  font-size: 40px;
+  font-family: 'Engagement', cursive;
+  color: #890025;
+}
+
+
+#bride img {
+  width: 290px;
+  height: 367px;
+  border: 30px solid #890025;
+  margin-left: 70px;
+}
+
+#bride h1{
+  font-size: 40px;
+  font-family: 'Engagement', cursive;
+  color: #890025;
+}
+
+#profiles img{
+  width: 360px;
+  border: 25px solid #890025;
+}
+#profiles table{
+  margin: 25px 0 0 100px;
+}
+#profiles table td{
+  padding: 20px;
+}
+.image {
+  padding-right: 90px;
+}
+
+#imageGallery img{
+  width: 250px;
+  height: 165px;
+  transition: border 0.2s;
+}
+#imageGallery table{
+  margin: auto;
+}
+#imageGallery h2{
+  text-align: center;
+  margin: 25px 0 25px;
+}
+#imageGallery td{
+  padding: 25px;
+}
+#imageGallery img:hover{
+  border: solid 5px #890025;
+  opacity: 0.7;
+}
+
+#weddingDetails{
+  background-image: url("https://invite.weddingpixel.in/321/images/ptn-bg.jpg");
+}
+#weddingDetails h1{
+  padding-top: 10px;
+  text-align: center;
+}
+
+#weddingDetails td{
+  background-color: white;
+  text-align: center;
+  border-top: 2px solid #890025;
+  border-bottom: 2px solid #890025;
+  width: 30%;
+  transition: letter-spacing 0.5s;
+  padding: 10px;
+}
+#weddingDetails table{
+  margin: 0 auto;
+  table-layout: fixed;
+  width: 90%;
+  border-spacing: 10px;
+  display: block;
+  padding-bottom: 20px;
+}
+#weddingDetails td h5{
+  font-weight: bold;
+  color: #ab0a34;
+  padding-top: 20px;
+}
+
+#weddingDetails td:hover{
+  letter-spacing: 3px;
+}
+.noHover{
+  letter-spacing: normal;
+  pointer-events: none;
+}
+
+
+#iframe{
+  width: 80%;
+  margin: auto;
+}
+#directions h1,p{
+  text-align: center;
+}
+
+footer{
+  height: 70px;
+  margin: 0;
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+}
+footer p{
+  margin: auto;
+  padding-top: 22px;
+}
+
+
+
+
+
